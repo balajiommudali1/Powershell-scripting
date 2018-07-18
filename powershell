@@ -1,0 +1,38 @@
+
+PowerShell Overview
+
+- An automation engine that provides a task based command line interface, a dynamic scripting environment, an interactive shell engine,
+  and much more oo scripting langugage.
+- Built on the .NET framework and gives a common ground for developer and IT professinals.
+- Easy to learn and a tooll for automation/managing systems.
+- Part of windows management framework(WMF)
+- Part of microsoft CEC
+
+Powershell Installation
+
+- Windows Powershell is pre-installed by default in windows server 2008 R2 and windows
+- Windows Powershell requires the Microsoft .NET framework 2.0 with service pack1.
+- Windows Powershell ISE requires the microsoft .NET framework 3.5 with service Pack 1
+
+PS C:\Users\balajo> Get-Service
+PS C:\> get-help | more
+
+Cmdlets
+
+- A cmdlet is single feature command that manipulates objects in windows powershell.
+
+Scripting
+
+In Windows Powershell, script files have a .ps1 file name extension. To run script, type the name of the script at the command prompt.
+
+The name extension is optional
+
+For example:
+
+C:\test\Hello.ps1
+
+
+
+
+
+
