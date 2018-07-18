@@ -32,6 +32,87 @@ For example:
 C:\test\Hello.ps1
 
 
+PowerShell Overview
+
+- An automation engine that provides a task based command line interface, a dynamic scripting environment, an interactive shell engine,
+  and much more oo scripting langugage.
+- Built on the .NET framework and gives a common ground for developer and IT professinals.
+- Easy to learn and a tooll for automation/managing systems.
+- Part of windows management framework(WMF)
+- Part of microsoft CEC
+
+Powershell Installation
+
+- Windows Powershell is pre-installed by default in windows server 2008 R2 and windows
+- Windows Powershell requires the Microsoft .NET framework 2.0 with service pack1.
+- Windows Powershell ISE requires the microsoft .NET framework 3.5 with service Pack 1
+
+PS C:\Users\balajo> Get-Service
+PS C:\> get-help | more
+
+Cmdlets
+
+- A cmdlet is single feature command that manipulates objects in windows powershell.
+
+Scripting
+
+In Windows Powershell, script files have a .ps1 file name extension. To run script, type the name of the script at the command prompt.
+
+The name extension is optional
+
+For example:
+
+C:\test\Hello.ps1
+
+PS C:\Users\bo\Desktop> get-help Get-Process
+
+PS C:\Users\bo\Desktop> Get-Process powershell
+
+Handles  NPM(K)    PM(K)      WS(K) VM(M)   CPU(s)     Id ProcessName
+-------  ------    -----      ----- -----   ------     -- -----------
+    459      59    82268      83348   660     4.07   8940 powershell
+
+Get-help and Get command
+- To get help for a windows powershell commannds, Get-Help followed by the
+command name, such as: Get-Help Get-Process
+
+- Get-Command can help you with. Just type Get-command without any additional
+] parameters and you'll get back a list of all the windows powershell cmdlets
+
+PS C:\Users\bo\Desktop> get-help Get-Process
+
+PS H:\> Get-Command
+
+Execution Policy
+- The Get-ExecutionPolicy cmdlet simply tells you which of the four execution policies( policies that determine which windows powershell scripts,if any will run on your computer) is currently
+in-force. The windows powershell execution policies include the following:
+
+- Restricted - no script can be run. Windows powershel can be use only in interactive mode.
+- AllSigned - Only scripts signed by a trusted publisher can be run.
+- Remotesingned - Downloaded scripts must be singed by trusted published before they can be run.
+- Unrestricted - No restrictions: all windows powershell  scripts can be run.
+- The Set-ExecutionPolicy cmdlet enables you to determine which windows powershell sript
+will be allowed to run on your computer. Windows powershell has four different
+ execution polices.
+
+#Get-ExecutionPolicy
+#Set-ExecutionPolicy Restricted
+#Set-ExecutionPolicy unRestricted
+
+Format Output
+
+ PS H:\> Get-Service|Format-Table -Wrap
+
+
+
+
+
+
+
+
+
+
+
 
 
 
