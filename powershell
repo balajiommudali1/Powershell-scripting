@@ -103,11 +103,20 @@ Format Output
 
  PS H:\> Get-Service|Format-Table -Wrap
 
+Advantages and Disadvantages of PowerShell
 
+Advantages
+- Object-Oriented
+- .NET objects and forms supported
+- More Functions compared to cmd.exe and VBScript 
+more Extensible via cmdlets, plugins
+- Background jobs
+- Ease of administration
 
+Disadvantages
 
-
-
+- Remoting creates opennings for an attacker to exploit
+- WinRM requires a Web server to run on the server.
 
 
 
