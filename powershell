@@ -119,7 +119,110 @@ Disadvantages
 - WinRM requires a Web server to run on the server.
 
 
+Operator in PowerShell
+Arithmetic Operator: +,-,/,%
+Comparison Operators: -eq, -ne, -lt, -gt, -le,  -ge, -contain, -
+Wildcard and RegEX: -like, -notlike, -match, -notmatch, -replace
+Logical and bitwise: -and, -or, -xor, -band, -bot, -bxor, and -bnot.
 
+$var1 = 3
+$var2 = 5
+$var1 == $var2
+
+
+
+
+
+Get-Service -Name "*A"
+$firstname = "Balaji"
+if($firstname -like "A*")
+{
+write-host " your name start with A"
+}
+else
+{
+write-host " your name start with A"
+}
+Conditional Execution
+if Statement
+ Powershell 'if' statement comes under the umbrella of flow control.
+Once you master the basic construction then you can increase it's usefulless by appending.
+'Else' and 'Elself' Statement.
+
+Example
+$file Get-Help about_if
+if ($file -Match "statement") 
+{
+Write-Host "Hello msg"
+}
+else
+{
+Write-Host "Wrong msg"
+}
+ $var1 = 10
+
+if( $var1 -eq 10)
+{
+Write-Host " equal"
+}
+else
+{
+Write-Host "Not Equal"
+} 
+
+ $x = 0
+do
+{
+ Write-Host "Output $i"
+  $i++
+ }
+ while ($x -gt 0) 
+
+
+
+ $x = 0
+do
+{
+ Write-Host "Output $i"
+  $i++
+ }
+ while ($x -le 5) 
+
+
+ for ($i = 1; $i -lt 99; $i++)
+{
+write-host "print number $i"
+} 
+
+ $myarray = @("Balaji","Ommudali")
+
+foreach ($item in $myarray)
+{
+Write-Host $item
+} 
+
+ $x="balaji"
+switch ($x)
+{
+'balaji' { Write-Host "you are Balaji"}
+'Ravi' {Write-Host "you are Ravi"}
+Default {}
+}
+
+Functions in Powershell
+- Functions provides the interface between your code and the user. They can define
+parameters, parameter typres, even provide help, much like cmdlets. A block of code may be
+contained within a functions for easy to reuse. To create a function, call the function keyword 
+followed by name for the function, then include your code inside a pair of curly braces.
+
+function function-name (function-parameters) { <function-body> }
+ Function MyFunc ([int]$a, [int]$b)
+{
+$c = $a+$b
+Write-Host "Sum is $c"
+}
+
+MyFunc -a  2 -b 7
 
 
 
